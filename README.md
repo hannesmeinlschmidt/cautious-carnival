@@ -40,7 +40,7 @@ guarantees that it works on other versions.
 > scientific research institution, but unfortunately, per the contract with DIW
 > Berlin I am not allowed to supply the data file directly within this
 > repository, so you need to request access to the SOEP data yourself. That being
-> said, in the [data_processed folder](data_processed/) there is a  [python snippet](data_processed/process_main_csv.py) which processes the rather
+> said, in the [data_processed folder](/data_processed/) there is a  [python snippet](/data_processed/process_main_csv.py) which processes the rather
 > unwieldly large SOEP **pl.csv** file to filter only the relevant columns for our
 > application case. The algorithm then works on the thus produced
 > **pl_filtered.csv** file.
