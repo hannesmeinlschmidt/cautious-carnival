@@ -212,7 +212,7 @@ def simulate_data():
         A_true = 2 * scale * np.random.random_sample((M, M)) - scale
 
     # Easy fixed A
-    A_true = np.diag([-1, -2])
+    # A_true = np.diag([-1, -2])
     # Generate random intercepts
     f_choice = 2 * box * np.random.random_sample((f_num, M)) - box
     f_true = -f_choice.dot(A_true.T)
