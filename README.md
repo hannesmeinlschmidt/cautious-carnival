@@ -1,9 +1,9 @@
 # A Variational Algorithm for Continuous-Time Modeling
-This is the repository for a python implementation of the algorithm presented in the book chapter *A
-Variational Approach to Continuous Time Dynamic Models* by Hannes Meinlschmidt,
-Meike Sons and Mark Stemmler. The implementation was written by Hannes
-Meinlschmidt to which questions and comments are welcome at meinlschmidt
-at math.fau.de. 
+This is the repository for a python implementation of the algorithm presented in the book chapter ***A
+Variational Approach to Continuous Time Dynamic Models*** by **Hannes Meinlschmidt,
+Meike Sons and Mark Stemmler**. The implementation was written by **Hannes
+Meinlschmidt** to which questions and comments are welcome at **meinlschmidt
+at math.fau.de**. 
 
 See below for instructions regarding reproducing the results from the book chapter.
  
