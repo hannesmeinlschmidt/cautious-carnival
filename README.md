@@ -2,11 +2,14 @@
 Modeling</h1>
 
 <p align="center">
-  <img src="pics/interceptsNoLearn_SDE.png" alt="Randomly simulated SDE trajectories" width="30%"/>
+  <img src="pics/interceptsNoLearn_SDE.png" alt="Randomly simulated SDE trajectories" width="40%"/>
   &nbsp;
   &nbsp;
   &nbsp;
-  <img src="pics/interceptsNoLearn_result.png" alt="Learned trajectories" width="30%"/>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  <img src="pics/interceptsNoLearn_result.png" alt="Learned trajectories" width="40%"/>
 </p>
 
 This is the repository for a python implementation of the algorithm presented
@@ -16,13 +19,13 @@ H. Meinlschmidt, M. Sons, & M. Stemmler: A Variational Approach to Continuous
 Time Dynamic Models.
 ``` 
 The implementation was written by Hannes
-Meinlschmidt to whom questions and comments are welcome at *[lastname]
-at math.fau.de*. 
+Meinlschmidt (*[lastname]
+at math.fau.de*). 
 
 See [below](#how-to-reproduce-the-results-from-the-book-chapter) for
 instructions regarding reproducing the results from the book
 chapter. Otherwise, feel free to play with the `simulate`
-[CLI](#command-line-interface-options) and various settings to generate a data set. 
+[CLI option](#command-line-interface-options) and various settings to randomly generate a data set. 
 
 ## What the algorithm does
 It is an optimization
@@ -78,7 +81,8 @@ to select **10%** of participants randomly.
 The code was written for and tested with **python 3.10** and I do not give any
 guarantees that it works on other versions.
  
-> [!WARNING] A word of warning: I have tried to put reasonable comments in the
+> [!WARNING] 
+> A word of warning: I have tried to put reasonable comments in the
 > code but it is an organically grown code and I am not a python
 > professional. Probably there are several rather inefficient and inelegant
 > solutions in there, not to speak of possible bugs. However, the main
