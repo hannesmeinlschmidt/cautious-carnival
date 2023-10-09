@@ -1,5 +1,5 @@
 <h1 align="center"">VarCT: A Variational Algorithm for Continuous-Time
-Modeling<h1>
+Modeling</h1>
 
 <p align="center">
   <img src="pics/interceptsNoLearn_SDE.png" alt="Randomly simulated SDE trajectories" width="30%"/>
