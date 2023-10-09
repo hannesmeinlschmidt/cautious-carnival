@@ -62,20 +62,27 @@ thus produced **pl_filtered.csv** file.
 
 Once you have the **pl_filtered.csv** file in the **data_processed** folder, you can reproduce the
 results in the book chapter with
-```
+```shell
 python VarCT_optimize.py
 ```
 This will select the default number of **1%** of participants in the data randomly and
 use these in the algorithm. To change this number, use the `-td percent` command line
 interface, e.g.
-```
+```shell
 python VarCT_optimize.py -td 10
 ```
 to select **10%** of participants randomly.
 
 ## Command Line Interface options
 
- * 
+ * `-td N` or `--trainingdata N`: **N percent** of
+   trajectories supplied in the data file are used for optimization. Does not apply if data is simulated.
+ * `-li` or `--learnintercepts`: Switches learning of intercepts on. Default is
+   **off**.
+ * `-ni N` or `--num_ints N`: Sets the number of intercepts classes in
+   simulated data to **N**
+   (integer). Does not apply if data is not simulated. Each trajectory/subject
+   is assigned an intercept class randomly.
 
 ## Requirements
 The code was written for and tested with **python 3.10** and I do not give any
