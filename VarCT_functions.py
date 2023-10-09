@@ -166,8 +166,9 @@ def plot_trajectoriesA(A, rhs, **kwargs):
                 plt.plot(*x, marker='x', color='k')
 
     # Labels corresponding to the concrete panel study setting
-    plt.xlabel('Home')
-    plt.ylabel('Work')
+    if not args.simulate:
+        plt.xlabel('Home')
+        plt.ylabel('Work')
     
     if 'title' in kwargs:
         plt.title(kwargs['title'])
@@ -189,8 +190,9 @@ def plot_simSDEtrajectories(**kwargs):
         plt.plot(trajectories_sim[i].T[0],trajectories_sim[i].T[1])
 
     # Labels corresponding to the concrete panel study setting
-    plt.xlabel('Home')
-    plt.ylabel('Work')
+    if not args.simulate:
+        plt.xlabel('Home')
+        plt.ylabel('Work')
     
     if 'title' in kwargs:
         plt.title(kwargs['title'])
