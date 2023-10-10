@@ -89,8 +89,8 @@ results in the book chapter with
 python VarCT_optimize.py
 ```
 This will select the default number of **1%** of participants in the data randomly and
-use these in the algorithm. To change this number, use the `-td percent` command line
-interface, e.g.
+use these in the algorithm. To change this number, use the `-td percent` [command line
+interface](#auxiliary), e.g.
 ```shell
 python VarCT_optimize.py -td 10
 ```
@@ -103,8 +103,6 @@ to select **10%** of participants randomly.
  * `-sim` or `--simulate`: Do not use the data file, but simulate data. 
  * `-n N` or `--num_ivs N`: *If simulating data (`-sim`)*, number **N** (integer) of
    trajectories/subjects to simulate. Default is **50**.
- * `-td N` or `--trainingdata N`: **N percent** of
-   trajectories supplied in the data file are used for optimization. *Does not apply if data is simulated.*
  * `-ni N` or `--num_ints N`: *If simulating data (`-sim`)*, sets the number of intercept classes to **N**
    (integer). Each trajectory/subject
    is assigned an intercept class randomly. Default is **number of
@@ -128,6 +126,8 @@ used either with the data file or simulated data.
    
 ### Auxiliary
 
+ * `-td N` or `--trainingdata N`: **N percent** of
+   trajectories supplied in the data file are used for optimization. *Does not apply if data is simulated.*
  * `-np N` or `--num_plots N`: Number **N** (integer) of trajectories plotted in the
    visualization plots. Default is **50**.
 
