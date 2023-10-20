@@ -114,6 +114,7 @@ def assemble_errors(trajectories):
         errors.append(y_j-target)
     return errors
 
+
 # Raw data trajectory plot routine
 def plot_trajectories(**kwargs):
     fig = plt.figure()

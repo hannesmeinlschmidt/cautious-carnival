@@ -143,3 +143,16 @@ guarantees that it works on other versions.
 > functionality should definitely be correct. Eventually I would consider
 > rewriting large aspects of the code, especially in order to facilitate usage also on other
 > data sets.
+
+There is also a **gradient check routine** in **VarCT_checkgrad.py** which
+checks the accuracy and speed of the adjoint gradient method used in the calculations against
+difference quotients of the objective function. Use 
+```shell
+python VarCT_checkgrad.py -sim
+```
+and see what it says. In principle it is enough to check this on only one
+trajectory. 
+
+If intercepts are not learned, then there is also a comparison with calculating
+the full differential (this is feasible because the parameter space is very
+small in this case) and numerical differentiation with the `numdifftools` package.

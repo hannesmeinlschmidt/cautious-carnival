@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-@author: borjangeshkovski
+@author: hannesmeinlschmidt
 """
 
 from scipy.optimize import minimize
@@ -13,7 +13,7 @@ from VarCT_functions import *
 
 # Build gradient of objective function
 def gradient(A, f):
-    A = A.reshape(M,M)
+    A = A.reshape(M, M)
     rhs = build_rhsFromLearn(f)
     trajectories = forward_trajectories(A, rhs)
     fvs = assemble_errors(trajectories)
@@ -44,7 +44,7 @@ def gradient(A, f):
         gradient_f_all.append((obj_div[j]**(-1)) * gradient_fj)
         gradient_A += (obj_div[j]**(-1)) * gradient_Aj
     gradient_A += beta_A * A
-    gradient_A = np.squeeze(gradient_A.reshape(M*M,1))
+    gradient_A = np.squeeze(gradient_A.reshape(M*M, 1))
 
     # Yet another detour due to intercept classes learning
     gradient_f = np.zeros((learn_num, M))

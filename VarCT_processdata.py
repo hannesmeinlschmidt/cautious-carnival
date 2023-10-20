@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+@author: hannesmeinlschmidt
+"""
+
 import pandas
 import numpy as npy
 import time
